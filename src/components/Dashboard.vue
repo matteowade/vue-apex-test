@@ -1,16 +1,22 @@
 <template>
   <div class="hello">
-    <sales></sales>
+    <regionProfit></regionProfit>
+    <regionUnitSales></regionUnitSales>
+    <studentConfidence></studentConfidence>
   </div>
 </template>
 
 <script>
-import Sales from './Sales.vue'
+import RegionProfit from './RegionProfit.vue'
+import RegionUnitSales from './RegionUnitSales.vue'
+import StudentConfidence from './StudentConfidence.vue'
 
 export default {
   name: 'Dashboard',
   components: {
-    sales: Sales
+    regionProfit: RegionProfit,
+    regionUnitSales: RegionUnitSales,
+    studentConfidence: StudentConfidence
   }
 }
 </script>

@@ -1,12 +1,13 @@
 <template>
   <div class="hello">
+    <h2>Profit by Region</h2>
     <apexchart v-if="series.length" type="bar" width="800" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
 <script>
 import VueApexCharts from 'vue-apexcharts'
-import SalesData from '../sales-data.json'
+import SalesData from '../sales-by-region-data.json'
 
 const moneyFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -15,7 +16,7 @@ const moneyFormatter = new Intl.NumberFormat('en-US', {
 })
 
 export default {
-  name: 'Sales',
+  name: 'RegionProfit',
   components: {
     'apexchart': VueApexCharts
   },
@@ -43,6 +44,9 @@ export default {
             return moneyFormatter.format(val)
           },
           offsetX: 0,
+        },
+        tooltip: {
+          enabled: false
         }
       }
     }

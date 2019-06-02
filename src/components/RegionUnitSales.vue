@@ -25,13 +25,14 @@ export default {
       salesData: SalesData,
       series: [],
       chartOptions: {
-        labels: [],
         dataLabels: {
           enabled: false,
-          offsetX: 0,
         },
         tooltip: {
           enabled: true
+        },
+        legend: {
+          horizontalAlign: 'left'
         }
       }
     }

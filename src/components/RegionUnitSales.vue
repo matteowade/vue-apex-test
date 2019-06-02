@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h2>Units Sold by Region</h2>
     <apexchart v-if="series.length" type="pie" width="800" :options="chartOptions" :series="series"></apexchart>
   </div>

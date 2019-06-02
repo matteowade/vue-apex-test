@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h2>Confidence levels of students who participated in Junior Giants</h2>
     <apexchart v-if="series.length" type="bar" width="800" :options="chartOptions" :series="series"></apexchart>
   </div>
@@ -7,7 +7,7 @@
 
 <script>
 import VueApexCharts from 'vue-apexcharts'
-import ParentSurvey from '../parent-survey.json'
+import ParentSurvey from '../parent-survey-data.json'
 
 export default {
   name: 'StudentConfidence',

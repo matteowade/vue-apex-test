@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h2>Profit by Region</h2>
     <apexchart v-if="series.length" type="bar" width="800" :options="chartOptions" :series="series"></apexchart>
   </div>

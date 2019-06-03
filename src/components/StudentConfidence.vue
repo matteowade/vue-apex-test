@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2>Confidence levels of students who participated in Junior Giants</h2>
-    <apexchart v-if="series.length" type="bar" width="800" :options="chartOptions" :series="series"></apexchart>
+    <h2>Change in confidence of students who participated in Junior Giants</h2>
+    <apexchart v-if="series.length" type="bar" height="400" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
@@ -39,7 +39,8 @@ export default {
         },
         tooltip: {
           enabled: false
-        }
+        },
+        colors:['#7ddcb8'],
       }
     }
   },
@@ -88,5 +89,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  @import '../main.scss';
 </style>

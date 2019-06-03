@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Profit by Region</h2>
-    <apexchart v-if="series.length" type="bar" width="800" :options="chartOptions" :series="series"></apexchart>
+    <apexchart v-if="series.length" type="bar" height="480" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
@@ -47,7 +47,8 @@ export default {
         },
         tooltip: {
           enabled: false
-        }
+        },
+        colors:['#7ea0f8'],
       }
     }
   },
@@ -77,5 +78,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  @import '../main.scss';
 </style>

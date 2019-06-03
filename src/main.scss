@@ -2,17 +2,36 @@ $brand-blue: #7ea0f8;
 $brand-green: #7ddcb8;
 $brand-teal: #6aeafc;
 $brand-red: #ee6662;
+$brand-yellow: #f3cf54;
 $brand-pink: #ed67a5;
 $brand-white: #fff;
 $brand-gray: #f4f6fa;
 $brand-medium-gray: #eef0f4;
-$brand-dark-gray: #333;
+$brand-darkest-gray: #25324d;
 
 $headline-font: 'Montserrat', sans-serif;
 $body-copy: 'Roboto', sans-serif;
 
-h1 {
+body, html {
+  font-family: $body-copy;
+  color: lighten($brand-darkest-gray, 35%);
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
+}
+
+h1 {
   font-size: 26px;
-  color: $brand-dark-gray;
+  font-weight: 700;
+  color: $brand-darkest-gray;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $headline-font;
+  color: $brand-darkest-gray;
+  border-bottom: 2px solid $brand-medium-gray;
+  padding-bottom: 15px;
 }

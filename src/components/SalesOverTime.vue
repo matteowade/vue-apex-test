@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Units sold by year</h2>
-    <apexchart v-if="series.length" type="area" width="800" :options="chartOptions" :series="series"></apexchart>
+    <apexchart v-if="series.length" type="area" height="300" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
@@ -33,6 +33,10 @@ export default {
         },
         tooltip: {
           enabled: false
+        },
+        colors:['#ed67a5'],
+        fill: {
+          colors: ['#ed67a5']
         }
       }
     }
@@ -74,7 +78,6 @@ export default {
             break;
         }
       }
-      console.dir(yearSales)
       Object.entries(yearSales).forEach(([key, value]) => {
         values.push(value)
       })
@@ -90,5 +93,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  @import '../main.scss';
 </style>

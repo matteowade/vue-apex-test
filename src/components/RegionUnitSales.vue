@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Units Sold by Region</h2>
-    <apexchart v-if="series.length" type="pie" width="800" :options="chartOptions" :series="series"></apexchart>
+    <apexchart v-if="series.length" type="pie" height="400" :options="chartOptions" :series="series"></apexchart>
   </div>
 </template>
 
@@ -33,7 +33,8 @@ export default {
         },
         legend: {
           horizontalAlign: 'left'
-        }
+        },
+        colors:['#ed67a5', '#7ea0f8', '#6aeafc', '#ee6662', '#7ddcb8', '#f3cf54', '#7373f5'],
       }
     }
   },
@@ -63,5 +64,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  @import '../main.scss';
 </style>

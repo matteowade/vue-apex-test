@@ -3,6 +3,7 @@
     <header>
       <div class="header-container">
         <h1>UpMetrics Code Challenge</h1>
+        <a href="https://github.com/matteowade/vue-apex-test" target="_blank">View code on Github</a>
       </div>
     </header>
     <section class="container">
@@ -55,6 +56,10 @@ export default {
   }
 
   .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px 40px 10px 40px;
     max-width: 1400px;
     margin: 0 auto;
